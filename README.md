@@ -9,7 +9,7 @@ easy to understand all codes every One Can Study These File Codes
 <li><b> Admin Name </b>: admin </li>
 <li><b> Admin pass </b>: admin OR pass OR admin7 </li>
 </ul>
-<i> <p> if any Problems Can Contact Feel Free </p> </i>
+<i> <p style="color:orange;"> if any Problems Can Contact Feel Free </p> </i>
 
 ## dark and Light Mode included
 every things is in control's by admin
