@@ -1,7 +1,7 @@
 
 <?
 
-include 'config.php'; 
+include '../config.php'; 
 
 $chkstng = "SELECT * FROM `ghstng` WHERE stngid = 1";
 $chkstg =mysqli_query($db,$chkstng);
@@ -12,7 +12,12 @@ $d = $chkq['end_date'];
   $s = $chkq['end_s'];
   $timfphp = $chkq['timef'];
 
+
+
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,48 +46,54 @@ $d = $chkq['end_date'];
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
- <!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
 
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/lottery-result.php" class="dark-vesion">Dark</a>
-  <a href="lottery-result.php" class="light-vesion">Light</a>
-</div>
-</div>
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="lottery-result.php" class="dark-vesion">Dark</a>
+            <a href="../lottery-result.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
-<div class="main-light-version">
-  <!--  header-section start  -->
-  <?php include 'header.php'; ?>
-  <!-- inner-page-banner start -->
-  <section class="inner-page-banner has_bg_image" data-background="assets/images/inner-page-bg.jpg">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="inner-page-banner-area">
-            <h1 class="page-title">Latest Lottery Results</h1>
-            <nav aria-label="breadcrumb" class="page-header-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item">result</li>
-              </ol>
-            </nav>
+
+  <div class="main-dark-version">
+    <!--  header-section start  -->
+    <? include 'header.php'; ?>
+    <!--  header-section end  -->
+
+
+    <!-- inner-page-banner start -->
+    <section class="inner-page-banner has_bg_image" data-background="assets/images/02.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="inner-page-banner-area">
+              <h1 class="page-title">Latest Lottery Results</h1>
+              <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                  <li class="breadcrumb-item">result</li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- inner-page-banner end -->
+    </section>
+    <!-- inner-page-banner end -->
 
-  <!-- lottery-result-section start -->
+   <!-- lottery-result-section start -->
   <section class="lottery-result-section section-padding">
     <div class="container">
       <div class="row justify-content-center">
@@ -226,82 +237,92 @@ $d = $chkq['end_date'];
   </section>
   <!-- lottery-result-section end -->
 
-  <!-- question-section start -->
-  <section class="question-section border-top section-padding section-bg">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-4">
-          <div class="thumb text-lg-right text-center">
-            <img src="assets/images/elements/faq.png" alt="image">
+    <!-- question-section start -->
+    <section class="question-section border-top section-padding section-bg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="thumb text-lg-right text-center">
+              <img src="assets/images/elements/faq.png" alt="image">
+            </div>
           </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="content">
-            <h2 class="title">If you have any questions</h2>
-            <p>Our top priorities are to protect your privacy, provide secure transactions, and safeguard your data. When you're ready to play, registering an account is required so we know you're of legal age and so no one else can use your account.We answer the most commonly asked lotto questions..</p>
-            <a href="faq.php" class="cmn-btn">Check FAQs</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- question-section end -->
-      <!-- brand-section start -->
-      <div class="brand-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="brand-slider">
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-1.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-2.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-3.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-4.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-1.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-2.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-3.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-                <div class="single-slide">
-                  <div class="slide-inner">
-                    <img src="assets/images/elements/jackpot-4.png" alt="image">
-                  </div>
-                </div><!-- single-slide end -->
-              </div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h2 class="title">If you have any questions</h2>
+              <p>Our top priorities are to protect your privacy, provide secure transactions, and safeguard your data. When you're ready to play, registering an account is required so we know you're of legal age and so no one else can use your account.We answer the most commonly asked lotto questions..</p>
+              <a href="faq.php" class="cmn-btn">Check FAQs</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- brand-section end -->
+    </section>
+    <!-- question-section end -->
+ <!-- brand-section start -->
+ <div class="brand-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="brand-slider">
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-1.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-2.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-3.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-4.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-1.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-2.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-3.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+          <div class="single-slide">
+            <div class="slide-inner">
+              <img src="assets/images/elements/jackpot-4.png" alt="image">
+            </div>
+          </div><!-- single-slide end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- brand-section end -->
 
-   <!-- footer-section start -->
-   <?php include 'footer.php'; ?>
-  <!-- footer-section end -->
+
+
+
+
+
+
+
+
+
+    <!-- footer-section start -->
+    <?php include 'footer.php' ?>
+    <!-- footer-section end -->
+    </div> 
 
   <!-- scroll-to-top start -->
   <div class="scroll-to-top">
@@ -333,6 +354,9 @@ $d = $chkq['end_date'];
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
   <script>
+/////////////////////////////////////////
+/////////////////////////////////////////
+//////////////////////////////
 ///////////////////
 var stime = <?php echo strtotime("$d $h:$m:$s") ?> * 1000;
   var now = <? echo time() ?> * 1000;
@@ -348,13 +372,17 @@ var stime = <?php echo strtotime("$d $h:$m:$s") ?> * 1000;
     var m = Math.floor((dis%(1000*60*60))/(1000*60));
     var s = Math.floor((dis%(1000*60))/1000);
    
-  $(".rmndaysonly").html( d );
+  $(".draw-timer").html( d );
     
   
   },1000);
   ///// end 
 /////////////////////////////////////
-  </script>
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+    </script>
+  
   
   
   

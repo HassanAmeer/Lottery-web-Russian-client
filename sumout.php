@@ -1,7 +1,7 @@
 
 <?
 
-include 'config.php';
+include '../config.php';
 error_reporting(0);
 session_start();
 unset($_SESSION['redpop']);
@@ -125,28 +125,29 @@ $pwbalslct = "UPDATE `userslog` SET `totalsumout`=totalsumout + '$pwbalnc', sumo
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/sec.css">
-
-    <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                    
 </head>
-<body>
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
 
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/sumout.php" class="dark-vesion">Dark</a>
-  <a href="sumout.php" class="light-vesion">Light</a>
-</div>
-</div>
+
+ 
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
+
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="sumout.php" class="dark-vesion">Dark</a>
+            <a href="../sumout.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
 
 
@@ -205,7 +206,7 @@ $pwbalslct = "UPDATE `userslog` SET `totalsumout`=totalsumout + '$pwbalnc', sumo
   width: 8rem;
  background: skyblue;
  border-radius: 10px;
- box-shadow: 1px 1px 8px silver;
+ box-shadow: 1px 1px 8px navy;
  text-align: center;
 }
 </style>
@@ -266,11 +267,11 @@ $pwbalslct = "UPDATE `userslog` SET `totalsumout`=totalsumout + '$pwbalnc', sumo
 <?
 if(isset($_SESSION['bluepop']))
 {
-  echo '<b style="color:green; font-size:1.5rem;">'.$_SESSION['bluepop'].'</b>';
+  echo '<b style="color:lime; font-size:1.5rem;">'.$_SESSION['bluepop'].'</b>';
 }
 if(isset($_SESSION['redpop']))
 {
-  echo '<b style="color:red; font-size:1.5rem;">'.$_SESSION['redpop'].'</b>';
+  echo '<b style="color:pink; font-size:1.5rem;">'.$_SESSION['redpop'].'</b>';
 }
 ?>
 
@@ -305,7 +306,8 @@ if(isset($_SESSION['redpop']))
     background:none ;
     margin-top:1rem;
     box-shadow:1px 1px 10px black;
-    color: navy;
+    color: aqua;
+    letter-spacing: 4px;
   }
   @media all and (max-width:500px)
   {
@@ -381,11 +383,12 @@ if(isset($_SESSION['redpop']))
 <br>
 <br>
 <br>
+<br>
 
      
       <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 30px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item" onclick="bnavbtnhom()">
@@ -483,7 +486,7 @@ if(isset($_SESSION['redpop']))
   <script src="assets/js/jquery.vmap.world.js"></script>
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
-  <script>
+   <script>
   
       jQuery(document).ready(function() {
         jQuery('#vmap').vectorMap({

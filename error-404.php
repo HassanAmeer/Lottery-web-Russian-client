@@ -1,7 +1,8 @@
 
+
 <?
 
-include 'config.php'; 
+include '../config.php'; 
 
 $chkstng = "SELECT * FROM `ghstng` WHERE stngid = 1";
 $chkstg =mysqli_query($db,$chkstng);
@@ -10,14 +11,13 @@ $chkq = mysqli_fetch_array($chkstg);
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>  <? echo $chkq['sitename']; ?>  </title>
+    <title> <? echo $chkq['sitename']; ?> </title>
     <!-- site favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpg">
     <!-- fontawesome css link -->
@@ -38,67 +38,76 @@ $chkq = mysqli_fetch_array($chkstg);
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
 
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/error-404.php" class="dark-vesion">Dark</a>
-  <a href="error-404.php" class="light-vesion">Light</a>
-</div>
-</div>
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
 
-<div class="main-light-version">
-  <!--  header-section start  -->
-  <?php include 'header.php'; ?>  <!-- inner-page-banner start -->
-  <section class="inner-page-banner has_bg_image" data-background="assets/images/inner-page-bg.jpg">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="inner-page-banner-area">
-            <h1 class="page-title">ERROR</h1>
-            <nav aria-label="breadcrumb" class="page-header-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item"><a href="#0">Pages</a></li>
-                <li class="breadcrumb-item active">ERROR</li>
-              </ol>
-            </nav>
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="error-404.php" class="dark-vesion">Dark</a>
+            <a href="../error-404.php" class="light-vesion">Light</a>
+          </div>
+        </div>
+
+
+  <div class="main-dark-version">
+    <!--  header-section start  -->
+    <? include 'header.php'; ?>
+    <!--  header-section end  -->
+
+
+
+    <!-- inner-page-banner start -->
+    <section class="inner-page-banner has_bg_image" data-background="assets/images/01.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="inner-page-banner-area">
+              <h1 class="page-title">ERROR</h1>
+              <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                  <li class="breadcrumb-item active">ERROR</li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- inner-page-banner end -->
+    </section>
+    <!-- inner-page-banner end -->
 
-  <!-- error-section start -->
-  <section class="error-section section-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="error-content text-center">
-            <img src="assets/images/elements/404.png" alt="images">
-            <h3 class="title">Oops... It looks  like you ‘re lost ! </h3>
-            <p>The page you were looking for dosen’t exist.</p>
-            <a href="index.php" class="cmn-btn">GO BACK</a>
+    <!-- error-section start -->
+    <section class="error-section section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="error-content text-center">
+              <img src="assets/images/elements/404.png" alt="images">
+              <h3 class="title">Oops... It looks  like you ‘re lost ! </h3>
+              <p>The page you were looking for dosen’t exist.</p>
+              <a href="index.php" class="cmn-btn">GO BACK</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- error-section end -->
+
+    <!-- footer-section start -->
+    <?php include 'footer.php' ?>
+    <!-- footer-section end -->
     </div>
-  </section>
-  <!-- error-section end -->
-
-
-   <!-- footer-section start -->
-   <?php include 'footer.php'; ?>
-  <!-- footer-section end -->
 
   <!-- scroll-to-top start -->
   <div class="scroll-to-top">

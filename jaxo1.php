@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config.php';
 session_start();
 $vusrlog = $_COOKIE['coklog'];
 
@@ -99,6 +99,7 @@ echo substr($lastnamef['byusr'],0,6);
 if(isset($_POST['vpayeaccj']))
 { echo $vusrdataf['uacc']; }
 //////////////
+///////////////////////////////////////////
 if(isset($_POST['setemailjs']))
 {
   $setmailj = mysqli_real_escape_string($db,$_POST['setemailjs']);

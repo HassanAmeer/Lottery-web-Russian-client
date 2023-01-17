@@ -1,22 +1,10 @@
-<?php
 
-include "config.php";
+
+<?
+
+include '../config.php'; 
 if(isset($_COOKIE['coklog']))
 { header('location:home.php'); }
-
-if(isset($_POST['registration_submit']))
-{
-
-  $regn = mysqli_real_escape_string($db, $_POST['registration_email']);
-  $regpass = $_POST['registration_pass'];
-  $regrepass = $_POST['registration_re_pass'];
-
-
-  $setrerg = "INSERT INTO `userslog`(`uemail`, `upass`) VALUES ('$regn','$regrepass')";
-  $mysqli1 = mysqli_query($db, $setrerg);
-
-}
-
 
 $chkstng = "SELECT * FROM `ghstng` WHERE stngid = 1";
 $chkstg =mysqli_query($db,$chkstng);
@@ -30,7 +18,7 @@ $chkq = mysqli_fetch_array($chkstg);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> <? echo $chkq['sitename']; ?> </title>
+    <title>  <? echo $chkq['sitename']; ?> </title>
     <!-- site favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpg">
     <!-- fontawesome css link -->
@@ -51,28 +39,32 @@ $chkq = mysqli_fetch_array($chkstg);
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
 
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/login.php" class="dark-vesion">Dark</a>
-  <a href="login.php" class="light-vesion">Light</a>
-</div>
-</div>
+ 
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
 
-<div class="main-light-version">
-  <!--  header-section start  -->
-  <?php include 'header.php'; ?>  
-  <!--  header-section end  -->
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="login.php" class="dark-vesion">Dark</a>
+            <a href="../login.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
+
+  <div class="main-dark-version">
+    <!--  header-section start  -->
+<?php include 'header.php'; ?>
+    <!--  header-section end  -->
 
 
 
@@ -275,44 +267,11 @@ width:96%;margin-left: 2%;margin-right: 2%; }
 
 
 
+          <?php include 'footer.php' ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- footer-section start -->
-   <?php include 'footer.php'; ?>
-  <!-- footer-section end -->
-    
-  </div>
-
+      
   <!-- scroll-to-top start -->
   <div class="scroll-to-top">
     <span class="scroll-icon">
@@ -320,7 +279,7 @@ width:96%;margin-left: 2%;margin-right: 2%; }
     </span>
   </div>
   <!-- scroll-to-top end -->  
-  
+
   <!-- jquery library js file -->
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.3.1.min.js"></script>
   <!-- bootstrap js file -->
@@ -343,33 +302,22 @@ width:96%;margin-left: 2%;margin-right: 2%; }
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
   <script>
-    var clock = $('.clock').FlipClock(99000 * 24 * 3, {
-      clockFace: 'DailyCounter',
-      countdown: true
-    });
+
+  </script>
+  <script>
       jQuery(document).ready(function() {
         jQuery('#vmap').vectorMap({
           map: 'world_en',
-          color: '#eaedef',
+          color: '#434574',
           backgroundColor: '#f7fcff',
           hoverOpacity: 0.8,
           selectedColor: '#eaedef',
-          scaleColors: ['#f7fcff', '#f7fcff'],
+          scaleColors: ['#434574', '#434574'],
           normalizeFunction: 'polynomial'
         });
       });
     </script>  
-    
-    <script>
- $(document).on('click','#backbtn', function(){
-     window.location.href="index.php";
-    })
-    /////////////////
-$(document).on('click','.switcherbtn', function(){
-    $('.switcherbtn').toggleClass('uni-switch-input-checked');
-});
-    /////////////////
-///////////////////////////////
+   <script>
 ///////////////////////////////
 /////////////single ///////////////
  $(document).on('click','#signbtn',function(){
@@ -453,6 +401,8 @@ function cpatuarefreshf(){
 
 window.onLoad = cpatuarefreshf();
     </script>
+    
+    
     
 </body>
 </html>

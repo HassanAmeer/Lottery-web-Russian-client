@@ -1,7 +1,10 @@
 
+
+
+
 <?
 
-include 'config.php';
+include '../config.php';
 error_reporting(0);
 
 
@@ -59,13 +62,32 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
 
 ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>  <? echo $chkq['sitename']; ?>  </title>
+    <title> <? echo $chkq['sitename']; ?> </title>
     <!-- site favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpg">
     <!-- fontawesome css link -->
@@ -86,30 +108,29 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/sec.css">
-
-    <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                    
 </head>
-<body style="background-image: url('assets/images/bg-two.jpg'); background-repeat: no-repeat; background-size: cover;">
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
-
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/history.php" class="dark-vesion">Dark</a>
-  <a href="history.php" class="light-vesion">Light</a>
-</div>
-</div>
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
 
 
+ 
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
+
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="history.php" class="dark-vesion">Dark</a>
+            <a href="../history.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
 
 
@@ -124,7 +145,7 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
 </style>
 
 
-
+<br>
 <div class="row" id="v31">
     <div class="col-lg-8">
       <div class="lottery-winning-num-part">
@@ -236,8 +257,8 @@ $wontablsq = mysqli_query($db,$wontabls);
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-header text-center">
-            <h2 class="section-title">Your Lottery Tickets</h2>
-            <p> Your purchasing Lottery Tickets is shown Below </p>
+            <h2 class="section-title" style="color:white;">Your Lottery Tickets</h2>
+            <p style="color:silver;"> Your purchasing Lottery Tickets is shown Below </p>
           </div>
         </div>
       </div>
@@ -364,8 +385,8 @@ $rdmchancebar = mt_rand(50, 100);
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-header text-center">
-            <h2 class="section-title">Your Withdrawal History </h2>
-            <p> Your Withdrawal History are shown below  </p>
+            <h2 class="section-title" style="color:white;">Your Withdrawal History </h2>
+            <p style="color:silver;"> Your Withdrawal History are shown below  </p>
           </div>
         </div>
       </div>
@@ -469,9 +490,9 @@ $vsumoutbl = "SELECT * FROM `sumout` WHERE byusr='$vusrlog' ORDER BY outid DESC"
 
 
 
-      <!---------------start-->
+     <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 30px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item" onclick="bnavbtnhom()">
@@ -580,7 +601,10 @@ $vsumoutbl = "SELECT * FROM `sumout` WHERE byusr='$vusrlog' ORDER BY outid DESC"
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
   <script>
-  
+    var clock = $('.clock').FlipClock(99000 * 24 * 3, {
+      clockFace: 'DailyCounter',
+      countdown: true
+    });
       jQuery(document).ready(function() {
         jQuery('#vmap').vectorMap({
           map: 'world_en',

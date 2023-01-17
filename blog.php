@@ -1,7 +1,7 @@
 
 <?
 
-include 'config.php'; 
+include '../config.php'; 
 
 $chkstng = "SELECT * FROM `ghstng` WHERE stngid = 1";
 $chkstg =mysqli_query($db,$chkstng);
@@ -17,7 +17,7 @@ $chkq = mysqli_fetch_array($chkstg);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>  <? echo $chkq['sitename']; ?> </title>
+    <title> <? echo $chkq['sitename']; ?> </title>
     <!-- site favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpg">
     <!-- fontawesome css link -->
@@ -38,55 +38,61 @@ $chkq = mysqli_fetch_array($chkstg);
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
- <!-- preloader start -->
- <div id="preloader"></div>
- <!-- preloader end -->
 
- <!-- template-version start -->
-<div class="template-version">
- <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
- <div class="color-version-area">
-   <a href="dark/blog.php" class="dark-vesion">Dark</a>
-   <a href="blog.php" class="light-vesion">Light</a>
- </div>
-</div>
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
 
- <div class="main-light-version">
-   <!--  header-section start  -->
-   <?php include 'header.php'; ?>
-  <!-- inner-page-banner start -->
-  <section class="inner-page-banner has_bg_image" data-background="assets/images/inner-page-bg.jpg">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="inner-page-banner-area">
-            <h1 class="page-title">Blog</h1>
-            <nav aria-label="breadcrumb" class="page-header-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item"><a href="#0">Blog</a></li>
-                <li class="breadcrumb-item active">Blog</li>
-              </ol>
-            </nav>
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="blog.php" class="dark-vesion">Dark</a>
+            <a href="../blog.php" class="light-vesion">Light</a>
+          </div>
+        </div>
+
+
+  <div class="main-dark-version">
+    <!--  header-section start  -->
+    <?php include 'header.php' ?>
+    <!--  header-section end  -->
+
+
+    <!-- inner-page-banner start -->
+    <section class="inner-page-banner has_bg_image" data-background="assets/images/01.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="inner-page-banner-area">
+              <h1 class="page-title">Blog 01</h1>
+              <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#0">Blog</a></li>
+                  <li class="breadcrumb-item active">Blog 01</li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- inner-page-banner end -->
+    </section>
+    <!-- inner-page-banner end -->
 
-  <!-- blog-grid-section start -->
-  <section class="blog-section section-padding">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-8">
-          <div class="row m-bottom-not-30">
-            
+    <!-- blog-grid-section start -->
+    <section class="blog-section section-padding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-8">
+            <div class="row m-bottom-not-30">
 <?php
    $limit = 3;
    if(isset($_GET['page'])){
@@ -111,7 +117,7 @@ $chkq = mysqli_fetch_array($chkstg);
    <div class="col-lg-12">
     <div class="post-item m-bottom-30">
       <div class="thumb">
-        <img src="assets/images/blog/<? echo $vsfetch['img']; ?>" alt="image">
+        <img src="../assets/images/blog/<? echo $vsfetch['img']; ?>" alt="image">
       </div>
       <div class="content">
     <h3 class="post-title"><a href="#0"><? echo $vsfetch['title']; ?></a></h3>
@@ -125,14 +131,12 @@ $chkq = mysqli_fetch_array($chkstg);
       </div>
     </div>
   </div><!-- post-item end -->
-<? } ?>              
+<? } ?>      
  </div>
-          
-          
-          
-          
-          
-          
+           
+           
+           
+            
           <div class="row">
             <div class="col-12">
               <nav class="d-pagination" aria-label="Page navigation example">
@@ -155,116 +159,118 @@ $chkq = mysqli_fetch_array($chkstg);
               </nav>
             </div>
           </div>
-
           
           
-        </div>
-        <div class="col-lg-3">
-          <div class="sidebar">
-            <div class="widget widget_subscribe">
-              <h5 class="widget-sub-title">Subscriber</h5>
-              <h3 class="widget-title">For NewsLetter</h3>
-              <form class="subscribe-form">
-                <input type="email" name="subs_email" id="subs_email" placeholder="Email address">
-                <input type="submit" value="subscribe">
-              </form>
-            </div><!-- widget end -->
-            <div class="widget widget_categories">
-              <h3 class="widget-title">categories</h3>
-              <ul>
-                <li><a href="#0">All<span>(99)</span></a></li>
-                <li><a href="#0">Jackpot<span>(77)</span></a></li>
-                <li><a href="#0">Winners<span>(49)</span></a></li>
-                <li><a href="#0">Powerball<span>(70)</span></a></li>
-                <li><a href="#0">Mega Millions<span>(89)</span></a></li>
-                <li><a href="#0">Inspiration<span>(93)</span></a></li>
-                <li><a href="#0">Bonus<span>(38)</span></a></li>
-              </ul>
-            </div><!-- widget end -->
-            <div class="widget widget_latest_post">
-              <h3 class="widget-title">latest posts</h3>
-              <ul class="small-post-list">
-                <li class="small-post">
-                  <div class="small-post-thumb">
-                    <img src="assets/images/blog/w1.jpg" alt="image">
-                  </div>
-                  <div class="small-post-content">
-                    <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
-                    <ul class="post-meta">
-                      <li><a href="#0">11 June 2022</a></li>
-                    </ul>
-                  </div>
-                </li><!-- small-post end -->
-                <li class="small-post">
-                  <div class="small-post-thumb">
-                    <img src="assets/images/blog/w2.jpg" alt="image">
-                  </div>
-                  <div class="small-post-content">
-                    <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
-                    <ul class="post-meta">
-                      <li><a href="#0">11 June 2022</a></li>
-                    </ul>
-                  </div>
-                </li><!-- small-post end -->
-                <li class="small-post">
-                  <div class="small-post-thumb">
-                    <img src="assets/images/blog/w3.jpg" alt="image">
-                  </div>
-                  <div class="small-post-content">
-                    <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
-                    <ul class="post-meta">
-                      <li><a href="#0">11 June 2022</a></li>
-                    </ul>
-                  </div>
-                </li><!-- small-post end -->
-                <li class="small-post">
-                  <div class="small-post-thumb">
-                    <img src="assets/images/blog/w4.jpg" alt="image">
-                  </div>
-                  <div class="small-post-content">
-                    <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
-                    <ul class="post-meta">
-                      <li><a href="#0">11 June 2022</a></li>
-                    </ul>
-                  </div>
-                </li><!-- small-post end -->
-              </ul>
-            </div><!-- widget end -->
-            <div class="widget widget_archives">
-              <h3 class="widget-title">Archives</h3>
-              <ul>
-                <li><a href="#0">23 November 2022<span>(99)</span></a></li>
-                <li><a href="#0">07 January 2022<span>(77)</span></a></li>
-                <li><a href="#0">20 October 2022<span>(49)</span></a></li>
-                <li><a href="#0">13 May 2022<span>(70)</span></a></li>
-                <li><a href="#0">07 January 2022<span>(89)</span></a></li>
-                <li><a href="#0">23 November 2022<span>(93)</span></a></li>
-                <li><a href="#0">13 May 2022<span>(38)</span></a></li>
-              </ul>
-            </div><!-- widget end -->
-            <div class="widget widget_tags">
-              <h3 class="widget-title">Tags</h3>
-              <div class="tags">
-                <a href="#0">lotto tips</a>
-                <a href="#0">Jackpot</a>
-                <a href="#0">Mega Millions </a>
-                <a href="#0">Lotto</a>
-                <a href="#0">Powerball</a>
-                <a href="#0">Winners</a>
-                <a href="#0">Bonus</a>
+          
+          
+          
+          
+          </div>
+          <div class="col-lg-3">
+            <div class="sidebar">
+              <div class="widget widget_subscribe">
+                <h5 class="widget-sub-title">Subscriber</h5>
+                <h3 class="widget-title">For NewsLetter</h3>
+                <form class="subscribe-form">
+                  <input type="email" name="subs_email" id="subs_email" placeholder="Email address">
+                  <input type="submit" value="subscribe">
+                </form>
+              </div><!-- widget end -->
+              <div class="widget widget_categories">
+                <h3 class="widget-title">categories</h3>
+                <ul>
+                  <li><a href="#0">All<span>(99)</span></a></li>
+                  <li><a href="#0">Jackpot<span>(77)</span></a></li>
+                  <li><a href="#0">Winners<span>(49)</span></a></li>
+                  <li><a href="#0">Powerball<span>(70)</span></a></li>
+                  <li><a href="#0">Mega Millions<span>(89)</span></a></li>
+                  <li><a href="#0">Inspiration<span>(93)</span></a></li>
+                  <li><a href="#0">Bonus<span>(38)</span></a></li>
+                </ul>
+              </div><!-- widget end -->
+              <div class="widget widget_latest_post">
+                <h3 class="widget-title">latest posts</h3>
+                <ul class="small-post-list">
+                  <li class="small-post">
+                    <div class="small-post-thumb">
+                      <img src="assets/images/blog/w1.jpg" alt="image">
+                    </div>
+                    <div class="small-post-content">
+                      <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
+                      <ul class="post-meta">
+                        <li><a href="#0">11 June 2022</a></li>
+                      </ul>
+                    </div>
+                  </li><!-- small-post end -->
+                  <li class="small-post">
+                    <div class="small-post-thumb">
+                      <img src="assets/images/blog/w2.jpg" alt="image">
+                    </div>
+                    <div class="small-post-content">
+                      <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
+                      <ul class="post-meta">
+                        <li><a href="#0">11 June 2022</a></li>
+                      </ul>
+                    </div>
+                  </li><!-- small-post end -->
+                  <li class="small-post">
+                    <div class="small-post-thumb">
+                      <img src="assets/images/blog/w3.jpg" alt="image">
+                    </div>
+                    <div class="small-post-content">
+                      <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
+                      <ul class="post-meta">
+                        <li><a href="#0">11 June 2022</a></li>
+                      </ul>
+                    </div>
+                  </li><!-- small-post end -->
+                  <li class="small-post">
+                    <div class="small-post-thumb">
+                      <img src="assets/images/blog/w4.jpg" alt="image">
+                    </div>
+                    <div class="small-post-content">
+                      <h6 class="post-title"><a href="#0">First PowerBall Plus winner of...</a></h6>
+                      <ul class="post-meta">
+                        <li><a href="#0">11 June 2022</a></li>
+                      </ul>
+                    </div>
+                  </li><!-- small-post end -->
+                </ul>
+              </div><!-- widget end -->
+              <div class="widget widget_archives">
+                <h3 class="widget-title">Archives</h3>
+                <ul>
+                  <li><a href="#0">23 November 2022<span>(99)</span></a></li>
+                  <li><a href="#0">07 January 2022<span>(77)</span></a></li>
+                  <li><a href="#0">20 October 2022<span>(49)</span></a></li>
+                  <li><a href="#0">13 May 2022<span>(70)</span></a></li>
+                  <li><a href="#0">07 January 2022<span>(89)</span></a></li>
+                  <li><a href="#0">23 November 2022<span>(93)</span></a></li>
+                  <li><a href="#0">13 May 2022<span>(38)</span></a></li>
+                </ul>
+              </div><!-- widget end -->
+              <div class="widget widget_tags">
+                <h3 class="widget-title">Tags</h3>
+                <div class="tags">
+                  <a href="#0">lotto tips</a>
+                  <a href="#0">Jackpot</a>
+                  <a href="#0">Mega Millions </a>
+                  <a href="#0">Lotto</a>
+                  <a href="#0">Powerball</a>
+                  <a href="#0">Winners</a>
+                  <a href="#0">Bonus</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- blog-grid-section end -->
-
-  
-   <!-- footer-section start -->
-   <?php include 'footer.php'; ?>
-  <!-- footer-section end -->
+    </section>
+    <!-- blog-grid-section end -->
+    <!-- footer-section start -->
+    <?php include 'footer.php' ?>
+    <!-- footer-section end -->
+  </div>
 
   <!-- scroll-to-top start -->
   <div class="scroll-to-top">

@@ -4,7 +4,7 @@
 
 <?
 
-include 'config.php';
+include '../config.php';
 error_reporting(0);
 
 
@@ -43,6 +43,16 @@ $tktridfp = $_COOKIE['tktridfp'];
 
 
 
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,28 +80,29 @@ $tktridfp = $_COOKIE['tktridfp'];
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/sec.css">
-
-    <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                    
 </head>
-<body style=" background-image: url('assets/images/bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
 
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/share.php" class="dark-vesion">Dark</a>
-  <a href="share.php" class="light-vesion">Light</a>
-</div>
-</div>
+
+ 
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
+
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="share.php" class="dark-vesion">Dark</a>
+            <a href="../share.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
 
 
@@ -115,8 +126,8 @@ $tktridfp = $_COOKIE['tktridfp'];
 
 <br>
 <center>
-    <h3 style="color:indigo;"> Invites friends </h3>
-<b style="color:green;"> Get Rewards </b><br>
+    <h3 style="color:#dfb4fe;"> Invites friends </h3>
+<b style="color:lime;"> Get Rewards </b><br>
     <br>
 <div style=" background: rgba(0, 128, 0, 0.377); box-shadow: 1px 1px 18px black; width: 170px; padding:10px;">
 <div style=" background:rgba(0, 89, 255, 0.521); box-shadow: 1px 1px 18px silver; width: 150px; padding:10px;">
@@ -220,7 +231,7 @@ $tktridfp = $_COOKIE['tktridfp'];
               </div>
               <div class="content">
                 <span class="percentage">10%</span>
-                <p>1st Level</p>
+                <p style="color:silver;">1st Level</p>
               </div>
             </div><!-- commission-items end -->
             <div class="commission-items d-flex align-items-center">
@@ -229,7 +240,7 @@ $tktridfp = $_COOKIE['tktridfp'];
               </div>
               <div class="content">
                 <span class="percentage">05%</span>
-                <p>2nd Level</p>
+                <p style="color:silver;">2nd Level</p>
               </div>
             </div><!-- commission-items end -->
             <div class="commission-items d-flex align-items-center">
@@ -238,7 +249,7 @@ $tktridfp = $_COOKIE['tktridfp'];
               </div>
               <div class="content">
                 <span class="percentage">03%</span>
-                <p>3rd Level</p>
+                <p style="color:silver;">3rd Level</p>
               </div>
             </div><!-- commission-items end -->
           </div>
@@ -271,7 +282,7 @@ $tktridfp = $_COOKIE['tktridfp'];
     
       <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 30px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item active" onclick="bnavbtnhom()">
@@ -379,7 +390,7 @@ $tktridfp = $_COOKIE['tktridfp'];
   <script src="assets/js/jquery.vmap.world.js"></script>
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
-  <script>
+ <script>
 
     
       jQuery(document).ready(function() {

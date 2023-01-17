@@ -4,7 +4,7 @@
 
 <?
 
-include 'config.php';
+include '../config.php';
 // error_reporting(0);
 session_start();
 
@@ -69,7 +69,7 @@ $chkq = mysqli_fetch_array($chkstg);
  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
-<body style=" background-image: url('assets/images/bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
 <!-- preloader start -->
 <div id="preloader"></div>
 <!-- preloader end -->
@@ -78,8 +78,8 @@ $chkq = mysqli_fetch_array($chkstg);
 <div class="template-version">
 <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
 <div class="color-version-area">
-  <a href="dark/play.php" class="dark-vesion">Dark</a>
-  <a href="play.php" class="light-vesion">Light</a>
+  <a href="play.php" class="dark-vesion">Dark</a>
+  <a href="../play.php" class="light-vesion">Light</a>
 </div>
 </div>
 
@@ -218,7 +218,7 @@ $chkq = mysqli_fetch_array($chkstg);
   </center>
 
 <div class="playwinp">
-<p class=""> Play and Win: Dear users All your Lottery Tickets Numbers thats you Have Buy are Listed below and your win chances are shown according To The Buy  Numbers of tickets When Selected Your Lottery Numbers in bottom Target area </p>
+<p style="color:silver;"> Play and Win: Dear users All your Lottery Tickets Numbers thats you Have Buy are Listed below and your win chances are shown according To The Buy  Numbers of tickets When Selected Your Lottery Numbers in bottom Target area </p>
 </div>
 
   <div style="display:flex;flex-direction:row; font-size:1rem; width:90%;margin-left:5%;">
@@ -249,7 +249,7 @@ $rdmchancebar = mt_rand(90 , 100);
     <div class="bar"></div>
     <span class="label"><? echo $rdmchancebar; ?>%</span>
   </div>
-  <h3 style="width:40%;"> Wining chances </h3>
+  <h3 style="width:40%;color:silver;"> Wining chances </h3>
 </div>
 
 
@@ -484,8 +484,8 @@ background-image:radial-gradient( circle closest-side,yellow,orange);border-radi
   <div class="play-card-header" style="background:rgba(108, 213, 255, 0.356); backdrop-filter:blur(14px);">
     <span class="number-amount" style="color:lime;text-shadow:1px 1px 2px black; letter-spacing:3px;">Draw lottery</span>
     <div class="header-btn-area">
-      <button type="button" id="quick-pick1"> card No: </button>
-<button type="button" class=" vrdminblckno1 rdmblok" id="clear-pick1" style="color:orange;font-size:2rem; text-shadow:1px 1px 2px black; letter-spacing:2px;">  </button>
+      <button type="button" id="quick-pick1" style="color:yellow;"> card No: </button>
+<button type="button" class=" vrdminblckno1 rdmblok" id="clear-pick1" style="color:lime;font-size:2rem; text-shadow:1px 1px 2px black; letter-spacing:2px;">  </button>
 
     </div>
  
@@ -736,7 +736,7 @@ input[type="range"]::-webkit-slider-thumb
 <center>
   <h2 style="color:#4fbeeb;text-shadow:1px 1px 2px black;"> Last wining Numbers </h2>
 </center>
-<div class="wintabl">
+<div class="wintabl" style="background:none;">
  
   <div class="wintablleft">
   <div class="play-card-body">
@@ -831,7 +831,7 @@ Your browser does not support the audio element.
 
 
 
-<div id="redpoptimediv" style="backdrop-filter:blur(10px);width:100%; height:2000%; position:absolute; z-index:900; top:0; bottom:0; left:0; right:0;">
+<div id="redpoptimediv" style="display:; backdrop-filter:blur(10px);width:100%; height:2000%; position:absolute; z-index:900; top:0; bottom:0; left:0; right:0;">
   <br>
   <br>
   <br>
@@ -880,7 +880,7 @@ Your browser does not support the audio element.
     <br><br><br><br>
       <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 30px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item active" onclick="bnavbtnhom()">
@@ -977,7 +977,7 @@ jQuery(document).ready(function() {
   });
 }else{
   setTimeout(function(){
-  history.back(1000);
+  history.back();
   }, 12000);
 }
 

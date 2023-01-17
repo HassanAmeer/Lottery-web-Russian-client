@@ -2,9 +2,12 @@
 
 
 
+
+
+
 <?
 
-include 'config.php';
+include '../config.php';
 error_reporting(0);
 
 
@@ -58,15 +61,6 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
 
 
 
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,37 +88,31 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
     <link rel="stylesheet" href="assets/css/jqvmap.min.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- dark version css -->
+    <link rel="stylesheet" href="assets/css/dark-version.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/sec.css">
-
-    <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                    
 </head>
-<body style=" background-image: url('assets/images/bg-two.jpg'); background-position:fit; background-repeat:no-repeat;width: 100%;background-size:cover;">
-<!-- preloader start -->
-<div id="preloader"></div>
-<!-- preloader end -->
-
-<!-- template-version start -->
-<div class="template-version">
-<button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
-<div class="color-version-area">
-  <a href="dark/profile.php" class="dark-vesion">Dark</a>
-  <a href="profile.php" class="light-vesion">Light</a>
-</div>
-</div>
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
 
 
+ 
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- preloader end -->
 
+        <!-- template-version start -->
+        <div class="template-version">
+          <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
+          <div class="color-version-area">
+            <a href="profile.php" class="dark-vesion">Dark</a>
+            <a href="../profile.php" class="light-vesion">Light</a>
+          </div>
+        </div>
 
-
-
-
-
-
+<br><br>
 
 
 <div class="bluepopup" style="display:none;">
@@ -182,7 +170,7 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
         margin-right:1%;
         background: rgba(62, 198, 252, 0.404);
         border-radius: 30px;
-        box-shadow: 1px 1px 18px silver;
+        box-shadow: 1px 1px 18px black;
     }
     .pcard  input{
         border:none;
@@ -234,17 +222,17 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
         </center>
  <center>
   <u class="text-white"> Balance </u>
-   <h2 style="font-size:2rem; color:aqua;text-shadow:1px 1px 8px navy;">  
+   <h2 style="font-size:2rem; color:aqua;text-shadow:1px 1px 4px aqua;">  
 <? echo $vlogf['sumout']; ?>
 <i class="fa fa-ruble text-white"> </i>
    </h2>
  </center>      
         
  <br>       
-        <i class="bx bx-edit" style="color:navy; font-size: 2rem; float: right;"> </i>
-    <h4 class="vgmail" style="color:navy"> user@gmail.com</h4>
-        <b class="vpayeer" style="color:rgb(0, 132, 255); text-shadow: 1px 1px 2px ; letter-spacing:2px; font-size: 1rem; float: right;"> P1234567890 </b>
-    <h4 style="color:navy"> Payeer </h4>
+        <i class="bx bx-edit" style="color:skyblue; font-size: 2rem; float: right;"> </i>
+    <h4 class="vgmail" style="color:aqua;"> user@gmail.com</h4>
+        <b class="vpayeer" style="color:rgb(93,177,255); text-shadow: 1px 1px 2px ; letter-spacing:2px; font-size: 1rem; float: right;"> P1234567890 </b>
+    <h4 style="color:skyblue;"> Payeer </h4>
     <center>  <u style="color:white;letter-spacing:2px; text-shadow: 1px 1px 1px silver; "> Update Profile Data </u> </center>
       <input class="setemailinpt" type="gmail" placeholder="Your Gmail">
       <input class="setpayeerinpt" type="text" placeholder="Your Payeer" autocomplete="off">
@@ -261,35 +249,35 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
 
 <!--------------- mid ---------------->
      <div id="pdetails1">
-        <div style="width: 98%; margin-left: 1%; margin-right: 1%; margin-bottom:1rem;  background: rgba(62, 198, 252, 0.404);border-radius: 30px; box-shadow: 1px 1px 18px silver;"> 
+        <div style="width: 98%; margin-left: 1%; margin-right: 1%; margin-bottom:1rem;  background: rgba(62, 198, 252, 0.404);border-radius: 30px; box-shadow: 1px 1px 18px navy;"> 
             <h3 style="text-align: center; width:100%;color:yellow; text-shadow:1px 1px 2px black;"> Account Details </h3>
                  <hr>
           <div style="  display: flex;
           justify-content:space-around;">
-            <b style="color:navy;border-left: 1rem;"> Account Activated </b>
+            <b style="color:skyblue;border-left: 1rem;"> Account Activated </b>
             <i class="fa fa-check-circle text-success" style="font-size:2rem;text-shadow:1px 1px 2px black;"> </i>
           </div>
           <div style="  display: flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color: rgb(255, 30, 0);border-left: 1rem;"> Account Ban </b>
+            <b style="color:pink;border-left: 1rem;"> Account Ban </b>
             <i class="bx text-success" style="border-radius:10px;box-shadow:1px 1px 6px black;text-align: center;"> <span style="padding-left:1rem; padding-right:1rem; text-align: center;" class="vbandiv"> None </span> </i>
           </div>
           <div style="  display: flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color: navy;border-left: 1rem;"> Registered Date </b>
-           <b class="fa fa-date"><? echo $vlogf['regdate']; ?><i class="fa fa-history" style="color:lime;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
+            <b style="color: skyblue;border-left: 1rem;"> Registered Date </b>
+           <b class="text-white"><? echo $vlogf['regdate']; ?><i class="fa fa-history" style="color:lime; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
-          <div style="  display: flex;
+          <div style="display:flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color: navy;border-left: 1rem;"> Reffers Levels  </b>
-<b> <? if($vlogf['reflevel'] > 0 ){echo $vlogf['reflevel']; }else{ echo 0; } ?> 
+            <b style="color: skyblue;border-left: 1rem;"> Reffers Levels  </b>
+<b class="text-white"> <? if($vlogf['reflevel'] > 0 ){echo $vlogf['reflevel']; }else{ echo 0; } ?> 
 
 <i class="fa fa-users" style="color:aqua; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
           <div style="  display: flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color: navy;border-left: 1rem;"> Total friends </b>
-           <b> 
+            <b style="color: skyblue;border-left: 1rem;"> Total friends </b>
+           <b class="text-white"> 
  <? if($vlogf['totalref'] > 0 ){echo $vlogf['totalref']; }else{ echo 0; } ?> 
        
            
@@ -297,14 +285,14 @@ $ttlwintkts = $valwonstktf['totlwonstkts'];
           </div>
           <div style="  display: flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color: navy;border-left: 1rem;"> friends Bonus </b>
-           <b> 
+            <b style="color: skyblue;border-left: 1rem;"> friends Bonus </b>
+           <b class="text-white"> 
  <? if($vlogf['refbonus'] > 0 ){echo $vlogf['refbonus']; }else{ echo 0; } ?> 
            
-             <i class="fa fa-ruble text-info" style="font-size:1rem; text-shadow:1px 1px 2px navy"></i> <i class="fa fa-database" style="color:aqua;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
+             <i class="fa fa-ruble text-gray" style="font-size:1rem; text-shadow:1px 1px 2px navy"></i> <i class="fa fa-database" style="color:aqua;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
         </div>
-        <div style="width: 98%; margin-left: 1%; margin-right: 1%; margin-bottom:1rem;  background: rgba(62, 198, 252, 0.404);border-radius: 30px; box-shadow: 1px 1px 18px silver;"> 
+        <div style="width: 98%; margin-left: 1%; margin-right: 1%; margin-bottom:1rem;  background: rgba(62, 198, 252, 0.404);border-radius: 30px; box-shadow: 1px 1px 18px navy;"> 
          <div style="display:flex;justify-content: space-between;padding: 5px;">
             <div><h3 style="text-align: center; width:100%;color:yellow; text-shadow:1px 1px 2px black;"> Lottery Tickets </h3></div>
           <div>  <ul class="number-list" style=" display:inline;">
@@ -347,18 +335,18 @@ $rdmchancebar = mt_rand(90 , 100);
   </div>
           <div style="  display: flex;
           justify-content:space-around;margin-top: 1rem;">
-            <b style="color:navy;border-left: 1rem;"> Total Have Tickets </b>
-            <b>   <? if($chkttlbuytkts > 0 ){echo $chkttlbuytkts; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:aqua;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
+            <b style="color:skyblue;border-left: 1rem;"> Total Have Tickets </b>
+            <b class="text-white">   <? if($chkttlbuytkts > 0 ){echo $chkttlbuytkts; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:aqua; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
           <div style="  display: flex;
           justify-content:space-around;margin-top: 1rem;">
-            <b style="color:navy;border-left: 1rem;"> Total Buy Tickets </b>
-            <b>   <? if($chkhvtktslst > 0 ){echo $chkhvtktslst; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:yellow;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
+            <b style="color:skyblue;border-left: 1rem;"> Total Buy Tickets </b>
+            <b class="text-white">   <? if($chkhvtktslst > 0 ){echo $chkhvtktslst; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:yellow;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
           <div style="  display: flex;
           justify-content:space-around; margin-top: 1rem;">
-            <b style="color:navy;border-left: 1rem;"> Total Won Tickets </b>
-            <b>   <? if($ttlwintkts > 0 ){echo $ttlwintkts; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:lime;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
+            <b style="color:skyblue;border-left: 1rem;"> Total Won Tickets </b>
+            <b class="text-white">   <? if($ttlwintkts > 0 ){echo $ttlwintkts; }else{ echo 0; } ?> <i class="fa fa-ticket" style="color:lime;; font-size:1.2rem; text-shadow:1px 1px 2px black"></i></b>
           </div>
       
         </div>
@@ -439,7 +427,7 @@ $rdmchancebar = mt_rand(90 , 100);
     
       <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 15px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item" onclick="bnavbtnhom()">
@@ -552,7 +540,7 @@ $rdmchancebar = mt_rand(90 , 100);
   <script src="assets/js/jquery.vmap.world.js"></script>
   <!-- main script js file -->
   <script src="assets/js/main.js"></script>
-  <script>
+   <script>
 
       jQuery(document).ready(function() {
         jQuery('#vmap').vectorMap({
@@ -594,7 +582,7 @@ $rdmchancebar = mt_rand(90 , 100);
       }else if(setdatafstng == 2){
       $('.redpopup').fadeIn();
       $('.popinerred').html('This Email Already Set');
-      }  }); // end post
+      } }); // end post
     }
   })
 ///////////////////////////////

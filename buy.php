@@ -1,7 +1,12 @@
 
+
+
+
 <?
 
-include 'config.php'; 
+include '../config.php';
+error_reporting(0);
+
 
 if(!isset($_COOKIE['coklog']))
 { header('location:login.php'); }
@@ -54,7 +59,7 @@ $tktridfp = $_COOKIE['tktridfp'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>  <? echo $chkq['sitename']; ?>  </title>
+    <title> <? echo $chkq['sitename']; ?> </title>
     <!-- site favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpg">
     <!-- fontawesome css link -->
@@ -84,7 +89,9 @@ $tktridfp = $_COOKIE['tktridfp'];
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>    
  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body>
+<body style=" background-image: url('assets/images/dark-bg-two.jpg'); background-position:fit; background-repeat:no-repeat; background-size: cover;">
+
+
 <!-- preloader start -->
 <div id="preloader"></div>
 <!-- preloader end -->
@@ -94,7 +101,7 @@ $tktridfp = $_COOKIE['tktridfp'];
 <button type="button" style="border-radius:20px 0 0 20px;"><i class="fa fa-adjust">  </i></button>
 <div class="color-version-area">
   <a href="dark/buy.php" class="dark-vesion">Dark</a>
-  <a href="buy.php" class="light-vesion">Light</a>
+  <a href="../buy.php" class="light-vesion">Light</a>
 </div>
 </div>
 
@@ -369,6 +376,7 @@ $sign = strtoupper(hash('sha256', implode(':', $arHash)));
 
 
 
+
   <!-- single-categories-play-section start -->
   <section class="single-categories-play-section section-padding">
     <div class="container">
@@ -381,8 +389,8 @@ $sign = strtoupper(hash('sha256', implode(':', $arHash)));
                   <img src="assets/images/elements/jackpot-3.png" alt="">
                 </div>
                 <div class="content">
-                  <h3 class="title">Top Sells </h3>
-   <a href="#euroblockbtm" class="text-primary"> Choose ? </a>
+                  <h3 class="title text-warning">Top Sells </h3>
+   <a href="#euroblockbtm" class="text-white"> Choose ? </a>
                  
 <?
 
@@ -404,15 +412,15 @@ $vtktshv = mysqli_fetch_assoc($onlyhvtktsq);
                 </div>
               </div>
               <div class="right text-right">
-           <span class="draw-days">draw in <b class="rmndaysonly"> </b> Days </span>
+           <span class="draw-days text-white">draw in <b class="rmndaysonly"> </b> Days </span>
                 <div class="header-btn-area">
                   
                   
-   <a href="#euroblockbtm"> <button type="reset" id="quick-pick-all"> Pick ?</button> </a>
+   <a href="#euroblockbtm"> <button type="reset" id="quick-pick-all" style="color:lime;"> Pick ?</button> </a>
    
    
-     <button onclick="vblcknosto5()" type="button" id="add-item"><i class="fa fa-refresh"></i></button>
-    <button type="button" onclick="delalltktsnoscard()" id="delete-item"><i class="fa fa-trash"></i></button>
+     <button onclick="vblcknosto5()" type="button" id="add-item"><i class="fa fa-refresh" style="color:white;"></i></button>
+    <button type="button" onclick="delalltktsnoscard()" id="delete-item"><i class="fa fa-trash" style="color:white;"></i></button>
                 </div>
               </div>
             </div><!-- single-header end -->
@@ -424,8 +432,8 @@ $vtktshv = mysqli_fetch_assoc($onlyhvtktsq);
                     <div class="play-card-header">
                       <span class="number-amount">Pick lottery</span>
                       <div class="header-btn-area">
-                        <button type="button" id="quick-pick1"> From card </button>
-   <button type="button" class="text-primary vrdminblckno1" id="clear-pick1"> 7 </button>
+                        <button type="button" id="quick-pipick" style="color:gold;"> From card </button>
+   <button type="button" class=" vrdminblckno1" id="clear-pick1" style="color:lime;"> 7 </button>
    
                       </div>
                     </div>
@@ -463,8 +471,8 @@ while($tktsnos1v = mysqli_fetch_array($tktsnos1q))
                    <div class="play-card-header">
                       <span class="number-amount">Pick lottery</span>
                       <div class="header-btn-area">
-                        <button type="button" id="quick-pick1"> From card </button>
-     <button type="button" class="text-primary vrdminblckno2" id="clear-pick1"> 8 </button>
+                        <button type="button" id="quick-pick1" style="color:gold;"> From card </button>
+     <button type="button" class="vrdminblckno2" id="clear-pick1" style="color:lime;"> 8 </button>
                       </div>
                     </div>
                     <div class="play-card-body">
@@ -500,8 +508,8 @@ while($tktsnos2v = mysqli_fetch_array($tktsnos2q))
                      <div class="play-card-header">
                       <span class="number-amount">Pick lottery</span>
                       <div class="header-btn-area">
-                        <button type="button" id="quick-pick1"> From card </button>
-   <button type="button" class="text-primary vrdminblckno3" id="clear-pick1"> 4 </button>
+    <button type="button" id="quick-pick1" style="color:gold;"> From card </button>
+   <button type="button" class="vrdminblckno3" id="clear-pick1" style="color:lime;"> 4 </button>
                       </div>
                     </div>
                     <div class="play-card-body">
@@ -536,8 +544,8 @@ while($tktsnos3v = mysqli_fetch_array($tktsnos3q))
                      <div class="play-card-header">
                       <span class="number-amount">Pick lottery</span>
                       <div class="header-btn-area">
-                        <button type="button" id="quick-pick1"> From card </button>
-  <button type="button" class="text-primary vrdminblckno4" id="clear-pick1"> 5 </button>
+                        <button type="button" id="quick-pick1" style="color:gold;"> From card </button>
+  <button type="button" class="vrdminblckno4" id="clear-pick1" style="color:lime;"> 5 </button>
                       </div>
                     </div>
                     <div class="play-card-body">
@@ -572,8 +580,8 @@ while($tktsnos4v = mysqli_fetch_array($tktsnos4q))
                    <div class="play-card-header">
                       <span class="number-amount">Pick lottery</span>
                       <div class="header-btn-area">
-                        <button type="button" id="quick-pick1"> From card </button>
-                        <button type="button" class="text-primary vrdminblckno5" id="clear-pick1"> 10 </button>
+                        <button type="button" id="quick-pick1" style="color:gold;"> From card </button>
+                        <button type="button" class="vrdminblckno5" id="clear-pick1" style="color:lime;"> 10 </button>
                       </div>
                     </div>
                     <div class="play-card-body">
@@ -606,7 +614,7 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
             </div><!-- single-body end -->
             <div class="single-footer d-flex justify-content-between">
               <div class="left">
-                <span>Winning Chances</span>
+                <span style="color:gold;">Winning Chances</span>
                 
                 
                 
@@ -621,12 +629,12 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
               <div class="right d-flex justify-content-between">
                 <div class="content">
                   <p>
-                    <span>Can draw with 1 ticket </span>
-                    <span class="amount"> 1 x 1000 <i class="fa fa-ruble text-primary"> </i></span>
+                    <span style="color:gold;">Can draw with 1 ticket </span>
+                    <span style="color:silver;" class="amount"> 1 x 1000 <i class="fa fa-ruble text-aqua"> </i></span>
                   </p>
                   <p>
-<span> Maximum 100 Tickets can buy</span>
-                    <span class="amount fa fa-gift">  <i class="fa fa-ticket text-primary"> </i></span>
+<span style="color:gold;"> Maximum 100 Tickets can buy</span>
+                    <span class="amount fa fa-gift">  <i class="fa fa-ticket text-warning"> </i></span>
                   </p>
                 </div>
                 <div class="card-cart-btn-area">
@@ -642,10 +650,16 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
     </div>
   </section>
   <!-- single-categories-play-section end -->
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   
 
 
 
@@ -666,8 +680,8 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
     <div class="row justify-content-center">
       <div class="col-lg-5">
         <div class="section-header text-center">
-          <h2 class="section-title">Lottery Jackpots</h2>
-          <p>Choose from the Powerball, Mega Millions, Lotto or Lucky Day Lotto and try for a chance to win a big cash prize ( many Tickets have many chances to WIN ) To choose Jackpots by Increasing of Lottery Tickets No. </p>
+          <h2 class="section-title text-white">Lottery Jackpots</h2>
+          <p style="color:silver;">Choose from the Powerball, Mega Millions, Lotto or Lucky Day Lotto and try for a chance to win a big cash prize ( many Tickets have many chances to WIN ) To choose Jackpots by Increasing of Lottery Tickets No. </p>
         </div>
       </div>
     </div>
@@ -686,7 +700,7 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
           <img src="assets/images/elements/jackpot-2.png" alt="image">
           <span class="amount"> 2000 <i class="fa fa-ruble"> </i> <b> = </b>  <b class="text-primary"> 2 </b> <i class="fa fa-ticket text-primary"> </i></span>
           <h5 class="title">Cancer Charity</h5>
-          <p class="next-draw-time">Next Draw : <span class="vlcltime"> </span></p>
+          <p class="next-draw-time">Next Draw : <span class="vlcltime"> end of Every month</span></p>
            <a href="#" class="cmn-btn">Choose From Card!</a>
         </div>
       </div><!-- jackpot-item end -->
@@ -781,7 +795,7 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
 
       <!---------------start-->
       <div id="navbtnsdiv">
-        <nav class="nav" style="box-shadow:1px 1px 30px silver;">
+        <nav class="nav" style="box-shadow:1px 1px 30px navy;">
             <ul class="nav-content">
                 <li class="nav-list">
                     <a href="#" class="link-item" onclick="bnavbtnhom()">
@@ -866,7 +880,7 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
  <div style="display:flex; flex-direction:row;">
   <img src="assets/images/Coffee-blue.gif" style="width:2.5em;">
  </div>
- <div style="color:rgb(0, 102, 255); margin-top:0.5em; margin-left:5px; margin-right:5px;">
+ <div style="color:rgb(93,255,243); margin-top:0.5em; margin-left:5px; margin-right:5px;">
   <b class="popinerblue"> success </b>
  </div>
  <button class="popclosebtnblue" style="border: none; outline-offset:none;"> X </button>
@@ -878,7 +892,7 @@ while($tktsnos5v = mysqli_fetch_array($tktsnos5q))
   <div style="display:flex; flex-direction:row;">
    <img src="assets/images/Coffee-red.gif" style="width:2.5em;">
   </div>
-  <div style="color:rgb(236, 17, 46); margin-top:0.5em; margin-left:5px; margin-right:5px;">
+  <div style="color:rgb(255,124,141); margin-top:0.5em; margin-left:5px; margin-right:5px;">
    <b class="popinerred"> Warning </b>
   </div>
   <button class="popclosebtnred" style="border: none; outline-offset:none;"> X </button>
