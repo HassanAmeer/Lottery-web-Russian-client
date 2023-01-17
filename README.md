@@ -6,7 +6,7 @@ every things is in control's by admin
 for demo can watch a video or can be download
 and some demo images are here's
 # download demo video
-<a target="_blank" href="https://www.mediafire.com/file/vybl3rj43krzk8f/km_lottery_720p_30f_20230117_175234.mp4/file"> Download Video </a>
+<a target="_blank" href="https://www.mediafire.com/file/vybl3rj43krzk8f/km_lottery_720p_30f_20230117_175234.mp4/file"> Download HD Demo Video </a>
 
 # Screenshots Demo
 1.
