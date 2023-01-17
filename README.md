@@ -7,7 +7,7 @@ for demo can watch a video or can be download
 and some demo images are here's
 # Screenshots Demo
 1.
-<img src='demo 1.png'>
+<img src='demo 1.jpg'>
 2.
-<img src="demo 2.png">
+<img src="demo 2.jpg">
 
