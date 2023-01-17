@@ -1,0 +1,304 @@
+/* dark version css start */
+.main-dark-version .header-section.menu-fixed {
+  background-color: #2B2D5C;
+}
+.main-dark-version .banner-elements-part {
+  background-position: 70% 145%;
+}
+.main-dark-version .header-top-left a, .main-dark-version .header-top-left select,
+.main-dark-version .header-cart-count span {
+  color: var(--dark-para-color);
+}
+.main-dark-version .header-top {
+  border-bottom-color: #3b3e7f;
+}
+.main-dark-version .main-menu > li > a,
+.main-dark-version li.menu_has_children:after {
+  color: var(--dark-para-color);
+}
+
+.main-dark-version .lottery-timer-section {
+  background-color: var(--dark-second-color);
+  border-color: rgb(56, 58, 119);
+}
+.main-dark-version .flip-clock-wrapper ul li a div div.inn {
+  background-color: #2b2d5c;
+}
+.main-dark-version .flip-clock-divider .flip-clock-label {
+  color: var(--dark-para-color);
+}
+.main-dark-version .jackpot-item {
+  background-color: var(--dark-main-color);
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.5);
+}
+.main-dark-version .jackpot-item:hover {
+  box-shadow: 0 12px 15px 3px rgba(51, 181, 247, 0.25);
+}
+.main-dark-version .choose-us-section {
+  background-color: var(--dark-main-color);
+  border-color: #2d487b;
+}
+.main-dark-version .choose-item {
+  background-color: var(--dark-main-color);
+  border-color: #2d487b;
+}
+.main-dark-version .lottery-winning-num-part,
+.main-dark-version .winner-part {
+  background-color: var(--dark-main-color);
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.45);
+}
+.main-dark-version table th {
+  background-color: #32346a;
+  color: var(--dark-para-color);
+}
+.main-dark-version table tbody tr:nth-child(odd) {
+  background-color: var(--dark-main-color);
+}
+.main-dark-version table tbody tr:nth-child(even) {
+  background-color: #32346a;
+}
+.main-dark-version .number-list li {
+  color: var(--dark-para-color);
+}
+.main-dark-version table tbody tr {
+  border-bottom-color: #383a77;
+}
+.main-dark-version .winner-list {
+  border-top-color: #383a77;
+}
+.main-dark-version .online-ticket-table-part {
+  background-color: var(--dark-main-color);
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.45);
+}
+.main-dark-version .online-ticket-table tbody tr td,
+.main-dark-version .online-ticket-table thead tr th {
+  border-right-color: #383a77;
+}
+.main-dark-version .affiliate-item {
+  background-color: var(--dark-main-color);
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.45);
+}
+.main-dark-version .affiliate-item:hover {
+  background-color: var(--main-color);
+}
+.main-dark-version .commission-area {
+  background-color: var(--dark-main-color);
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.45);
+}
+.main-dark-version .commission-area .title-area::before {
+  background-color: var(--main-color);
+}
+.main-dark-version .section-bg {
+  background-color: var(--dark-second-color);
+}
+.main-dark-version #vmap {
+  background-color: transparent !important;
+}
+div[class*="position"] .dot {
+  background-color: #ffffff;
+}
+.main-dark-version .testimonial-slider-arrows .button-next, 
+.main-dark-version .testimonial-slider-arrows .button-prev {
+  color: #ffffff;
+}
+.main-dark-version .testimonial-slide {
+  background-color: var(--dark-second-color);
+  -webkit-box-shadow: 0 0 3px 2px rgba(51, 181, 247, 0.15);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+}
+.main-dark-version .contact-form input, 
+.main-dark-version .contact-form textarea {
+  background-color: #303266;
+}
+.main-dark-version .contact-form .submit-btn {
+  background-color: var(--main-color);
+}
+.main-dark-version .slide-inner {
+  border-color: #545680;
+}
+.main-dark-version .footer-bottom {
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .subscribe-form input[type="email"] {
+  background-color: var(--dark-main-color);
+  border-color: #545680;
+}
+.main-dark-version .border-top {
+  border-top: 1px solid rgb(56, 58, 119) !important;
+}
+.main-dark-version .affiliate-item .icon::after {
+  border: 1px solid rgba(51, 181, 247, 0.2);
+  background-color: rgba(255, 255, 255, 0.302);
+}
+.main-dark-version .affiliate-item:hover .icon .icon-inner {
+  background-color: #33b5f7;
+}
+.main-dark-version .affiliate-item:hover {
+  box-shadow: 6px 10.392px 17.22px 3.78px rgba(51, 181, 247, 0.21);
+}
+.main-dark-version .affiliate-item:hover .icon::after {
+  border-color: #ffffff;
+}
+.main-dark-version .affiliate-item .icon .icon-inner {
+  background-color: #303265;
+}
+.main-dark-version .brand-section {
+  background-color: #303266;
+}
+.main-dark-version table tbody tr:nth-child(odd) .progressbar {
+  background-color: #32346a;
+}
+.main-dark-version table tbody tr:nth-child(even) .progressbar {
+  background-color: #383a77;
+}
+.main-dark-version .commission-items .content p {
+  color: #ffffff;
+}
+.main-dark-version .contact-form input,
+.main-dark-version .contact-form textarea {
+  color: #ffffff;
+}
+.main-dark-version .footer-widget .subscribe-form input {
+  color: #ffffff;
+}
+.main-dark-version .footer-social-links li a {
+  background-color: transparent;
+  color: #c1c2d6;
+}
+.main-dark-version .footer-social-links li a:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-color: var(--main-color);
+}
+.main-dark-version .number-count-item {
+  border-right-color: rgba(255, 255, 255, 0.45);
+}
+.main-dark-version .login-registration-area .nav-tabs li a {
+  color: #363636;
+}
+.main-dark-version .login-registration-area .nav-tabs li a.active {
+  color: #ffffff;
+}
+.main-dark-version .cmn-list li{
+  color: #ffffff;
+}
+.main-dark-version .join-item{
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .cart-area{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .sub-total-amount .title, .discount-amount .title{
+  color: #ffffff;
+}
+.main-dark-version .faq-wrapper .nav-item .nav-link{
+  color: var(--dark-para-color);
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .faq-wrapper .nav-item .nav-link.active{
+  background-color: var(--main-color);
+}
+.main-dark-version .sorteo-accordion .card-header .btn-link{
+  background-color: var(--dark-second-color);
+  color: #ffffff;
+}
+.main-dark-version .sorteo-accordion .card-body{
+  margin-top: 0;
+}
+.main-dark-version .sorteo-accordion .card-header .btn-link{
+  border-radius: 0;
+}
+.main-dark-version .sorteo-accordion .card-body{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .cart-table tbody td{
+  color: #ffffff;
+}
+.main-dark-version .single-header .right .draw-days{
+  color: #ffffff;
+}
+.main-dark-version .single-header .right button{
+  color: #ffffff;
+}
+.main-dark-version .play-card-header .header-btn-area button{
+  color: #ffffff;
+}
+.main-dark-version .play-card-body .number-list li{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .play-card-body .number-list li.active{
+  background-color: var(--main-color);
+}
+.main-dark-version .single-footer .right .content p span{
+  color: #ffffff;
+}
+.main-dark-version .single-footer .right .content p span.amount{
+  color: var(--main-color);
+}
+.main-dark-version .overview-item{
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .overview-item .content a{
+  color: #ffffff;
+}
+.main-dark-version .post-meta li a{
+  color: #ffffff;
+}
+.main-dark-version .widget_tags .tags a{
+  color: var(--dark-para-color);
+}
+.main-dark-version .contact-area{
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .contact-wrapper{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .post-item{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .d-pagination .pagination li a{
+  color: #ffffff;
+}
+.main-dark-version .d-pagination .pagination li a i{
+  color: #ffffff;
+}
+.main-dark-version .subscribe-area{
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .reward-item{
+  background-color: var(--dark-main-color);
+}
+.main-dark-version .winner-item .content{
+  background-color: var(--dark-second-color);
+}
+.main-dark-version .winner-item .content .amount{
+  color: #ffffff;
+}
+.main-dark-version .winner-item .content .game-name{
+  color: #ffffff;
+}
+.main-dark-version .winner-item .content .name{
+  color: #ffffff;
+}
+.main-dark-version .breadcrumb li a{
+  color: var(--dark-para-color);
+}
+.main-dark-version .breadcrumb-item+.breadcrumb-item{
+  color: var(--dark-para-color);
+}
+.main-dark-version .breadcrumb-item+.breadcrumb-item::before{
+  color: var(--dark-para-color);
+}
+.main-dark-version .next-jack-amount .amount{
+  color: #ffffff;
+}
+.menu-toggle {
+  border-color: #ffffff;
+}
+.menu-toggle:before, .menu-toggle:after {
+  background-color: #ffffff;
+}
