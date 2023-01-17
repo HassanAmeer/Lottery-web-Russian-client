@@ -1,0 +1,111 @@
+.d-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.cmn-btn {
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 10px 26px;
+  font-weight: 400;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.cmn-btn:hover {
+  box-shadow: 0 11px 15px 0 rgba(51, 181, 247, 0.45);
+  color: #ffffff;
+}
+.border-btn {
+  padding: 11px 21px;
+  border: 1px solid #ededf5;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  color: #6b6f78;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+  font-weight: 700;
+}
+.text-btn {
+  font-weight: 400;
+  text-transform: capitalize;
+  color: rgba(51, 55, 69, 0.8);
+  text-decoration: underline;
+  margin-top: 15px;
+}
+.text-btn:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.section-header {
+  margin-bottom: 55px;
+  margin-top: -15px;
+}
+.section-header .top-title {
+  margin-bottom: 5px;
+}
+.section-title {
+  text-transform: capitalize;
+}
+.section-header p {
+  margin-top: 19px;
+}
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.mt-mb-15 {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.section-bg {
+  background-color: #f7fcff;
+}
+.form-grp+.form-grp {
+  margin-top: 10px;
+}
+.main-dark-version {
+  background-color: var(--dark-main-color);
+}
+.has_bg_image {
+  background-position: center;
+  background-size: cover;
+}
+.m-bottom-30 {
+  margin-bottom: 30px;
+}
+.m-bottom-not-30 {
+  margin-bottom: -30px;
+}
+.load-more-btn-area {
+  margin-top: 50px;
+  text-align: center;
+}
+.load-more-btn-area button {
+  text-transform: capitalize;
+}
+.border-top {
+  border-top: 1px solid #ededf5 !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #ededf5 !important;
+}
+input[type="submit"] {
+  cursor: pointer;
+}

@@ -1,0 +1,221 @@
+
+
+
+
+/************************************************************************/
+  .profname{
+    animation: profname 4s linear infinite;
+  }
+  @keyframes profname{
+  20%{
+    color: white;
+  }
+  40%{
+    color: rgb(1, 255, 200);
+  }
+  50%{
+    color:#91daf0;
+    opacity: 0.7;
+  }
+
+  }
+/***********************************************************************/
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbtnsdiv{
+    position: fixed;
+    bottom: 10px;
+    z-index: 200;
+    width: 70%;
+    margin-left: 15%;
+    margin-right:15%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    border-radius: 12px;
+    background:  #3fbaf3;
+    padding: 0 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.nav-content{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 95px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item.active{
+    transform: translateY(9px);
+}
+.link-icon{
+    font-size: 38px;
+    color: rgb(92, 92, 92);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item.active .link-icon{
+    color: white;
+    font-size: 1.7rem;
+}
+.link-text{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3fbaf3;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 4px;
+}
+.link-item.active .link-text{
+    opacity: 1;
+    transform: translateY(-65px);
+}
+.indicator{
+    position: absolute;
+    top: -15px;
+    left: 48px;
+    font-size: 2rem;
+    color: white;
+         /*   height: 36px;
+            width: 36px;
+            background-color:  #3fbaf3;
+            border: 6px solid #ffffff;
+            border-radius: 50%;       */
+    transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}/*
+.indicator::before,
+.indicator::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    height: 24px;
+    width: 19px;
+}
+.indicator::before{
+    left: -22px;
+    margin-top: 80px;
+    background-color:  #3fbaf3;
+    border-top-right-radius: 55px;
+    box-shadow: 1px -13px #ffffffea;
+}
+.indicator::after{
+    right: -22px;
+    margin-bottom: -5px;
+    background-color:  #3fbaf3;
+    border-top-left-radius: 25px;
+    box-shadow: -1px -13px #ffffffe7;
+}
+
+*/
+/*     2976 = 31 */
+/*     1824 = 19 */
+/*     499 = 5.2 */
+/*     640 */
+
+
+
+
+@media all and (max-width:450px){
+
+nav{
+    border-radius: 12px;
+    background:  #3fbaf3;
+    padding: 0 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.nav-content{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 4rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item.active{
+    transform: translateY(9px);
+}
+.link-icon{
+    font-size: 3rem;
+    color: rgb(92, 92, 92);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item.active .link-icon{
+    color: white;
+    font-size: 1.7rem;
+}
+.link-text{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3fbaf3;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 4px;
+}
+.link-item.active .link-text{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+.indicator{
+    display: none;
+}
+.indicator::before,
+.indicator::after{
+display: none;
+}
+.indicator::before{
+display: none;
+}
+.indicator::after{
+display: none;
+}
+/***********************/
+
+/***********************/
+/***********************/
+/***********************/
+
+}
+/**********************************************************************************/
+@media all and (max-width:900px){
+.hstryhomsmhide{
+    display:none;
+  }
+}
+
+
+
+
