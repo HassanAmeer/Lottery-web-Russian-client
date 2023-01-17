@@ -1,5 +1,5 @@
 # Lottery-web-for-Russian-client
-easy to understand all codes
+easy to understand all codes every One Can Study These File Codes
 
 ## dark and Light Mode
 every things is in control's by admin
