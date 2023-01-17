@@ -9,7 +9,7 @@ and some demo images are here's
 <a target="_blank" href="https://www.mediafire.com/file/vybl3rj43krzk8f/km_lottery_720p_30f_20230117_175234.mp4/file"> Download HD Demo Video </a>
 
 # video demo
-<img src="https://www.mediafire.com/file/vybl3rj43krzk8f/km_lottery_720p_30f_20230117_175234.mp4/file">
+<video src="https://www.mediafire.com/file/vybl3rj43krzk8f/km_lottery_720p_30f_20230117_175234.mp4/file">
 
 # Screenshots Demo
 1.
