@@ -2,6 +2,15 @@
 easy to understand all codes every One Can Study These File Codes
 
 <code> BootStrape HTML CSS Js JQ Ajax PHP MySQli </code>
+
+<u> Admin Panel </u>
+<link> yourdomainlink/adminpro <link>
+<ul>
+<li><b> Admin Name </b>: admin </li>
+<li><b> Admin pass </b>: admin OR pass OR admin7 </li>
+</ul>
+<p> if any Problems Can Contact Feel Free </p>
+
 ## dark and Light Mode included
 every things is in control's by admin
 for demo can watch a video or can be download
