@@ -1,7 +1,7 @@
 # Lottery-web-for-Russian-client
 easy to understand all codes every One Can Study These File Codes
 
-<code> BootStrape HTML CSS Js JQ Ajax PHP SQli </code>
+<code> BootStrape HTML CSS Js JQ Ajax PHP MySQli </code>
 ## dark and Light Mode included
 every things is in control's by admin
 for demo can watch a video or can be download
